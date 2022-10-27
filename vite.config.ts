@@ -14,10 +14,11 @@ export default defineConfig({
     sourcemap: true,
     rollupOptions: {
       input: "src/ts/module.ts",
+      // we build a single file with vite
       output: {
-        dir: undefined,
-        file: "dist/scripts/module.js",
+        dir: "dist",
         format: "es",
+        entryFileNames: "module.js",
       },
     },
   },
@@ -30,6 +31,7 @@ export default defineConfig({
     }),
     copy({
       targets: [
+        { src: "src/module.json", dest: "dist" },
         { src: "src/languages", dest: "dist" },
         { src: "src/templates", dest: "dist" },
       ],
