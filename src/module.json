@@ -1,5 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/foundryvtt-manifest.json",
+  "name": "foundry-module-ts",
   "id": "foundry-module-ts",
   "title": "Typescript Template Module",
   "description": "A template module using Typescript. You should change name, title, and description in module.json.",
@@ -20,6 +21,10 @@
       "path": "languages/en.json"
     }
   ],
-  "styles": ["style.css"],
-  "esmodules": ["scripts/module.js"]
+  "styles": [
+    "style.css"
+  ],
+  "esmodules": [
+    "scripts/module.js"
+  ]
 }

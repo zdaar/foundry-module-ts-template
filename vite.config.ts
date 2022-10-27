@@ -16,7 +16,7 @@ export default defineConfig({
       input: "src/ts/module.ts",
       // we build a single file with vite
       output: {
-        dir: "dist",
+        dir: "dist/scripts",
         format: "es",
         entryFileNames: "module.js",
       },
